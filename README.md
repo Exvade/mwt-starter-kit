@@ -13,21 +13,16 @@ Starter kit ini adalah fondasi standar untuk semua aplikasi internal PT Mada Wik
 ## Panduan Instalasi (Untuk Developer)
 
 ```bash
-# 1. Clone repositori ini dengan nama proyek Anda
-git clone https://github.com/PT-MWT/starter-kit.git [nama-proyek]
+# 1. Buat Repositori Baru dari Template
+1. Buka repo starter kit di GitHub.
+2. Klik tombol **Use this template** -> **Create a new repository**.
+3. Beri nama proyek Anda, lalu klik **Create**.
 
-# 2. Masuk ke direktori
-cd [nama-proyek]
+# 2. Clone Repositori Baru Anda
+git clone https://github.com/UsernameAnda/[nama-proyek-baru].git
+cd [nama-proyek-baru]
 
-# 3. Hapus folder .git bawaan starter kit agar Anda bisa membuat repo baru
-rm -rf .git  # (atau hapus manual folder .git)
-
-# 4. Inisialisasi git baru
-git init
-git add .
-git commit -m "Initial commit from MWT Starter Kit"
-
-# 5. Install dependensi
+# 3. Install Dependensi
 composer install && npm install
 
 # 6. Copy .env dan generate key
