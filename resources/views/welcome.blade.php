@@ -168,9 +168,9 @@
 
                             <div>
                                 <h4 class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">Notifikasi
-                                    Global (SweetAlert2)</h4>
+                                    Global (Native Toast)</h4>
                                 <x-button variant="primary"
-                                    onclick="Swal.fire({icon: 'success', title: 'Berhasil', text: 'SweetAlert2 telah terintegrasi di sistem!', confirmButtonColor: '#14532d'})">
+                                    onclick="window.dispatchEvent(new CustomEvent('notify', { detail: { type: 'success', title: 'Berhasil!', message: 'Native Toast Alpine.js telah terintegrasi di sistem!' } }))">
                                     Test Notifikasi
                                 </x-button>
                             </div>
